@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+    
+}
+.head{
+    display: flex;
+    height: 50px;
+}
+.logo{
+    height: 50px;
+    width: 50vw;
+    right: 20%;
+    background-color: black ;
+    border-color: #470eaf;
+    /* position: relative; */
+}
+.logo::before{
+    content: 'We Destroy to Rebuild';
+    position: absolute;
+    color: antiquewhite;
+    left: 20%;
+    top: 2%;
+    font-size: 20px;
+    cursor: pointer;
+    transform: rotate(360deg);
+    transition: 0.5s all ease;
+
+}
+.logo:hover::before{
+    /* transform: translateX(10%); */
+    transform: scale(1.1);
+}
+.logo img{
+    height: inherit;
+    width: 30%;
+    border-radius: 10px;
+    border: 2px solid black;
+    /* border-color: white; */
+
+}
+.nav{
+    background-color: grey;
+}
+ul{
+    height: 50px;
+    display: flex;
+    gap: 25px;
+    text-decoration: none;
+    width: 50vw;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    list-style: none;
+
+}
+li a{
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0px 0px 0px 25px;
+    
+}
+
+.cont_img{
+    width: 100vw;
+}
+.cont_img img{
+    width: 100vw;
+    height: 300px;
+}
+
+
+    footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.footer-left, .footer-middle, .footer-right {
+    flex: 1;
+}
+
+.footer-left h3 {
+    font-size: 24px;
+}
+
+.footer-middle h4, .footer-right h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-middle ul {
+    list-style: none;
+}
+
+.footer-middle ul li {
+    margin-bottom: 10px;
+}
+
+.footer-middle ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.footer-middle ul li a:hover {
+    color: #ff9800;
+}
+
+.footer-right p {
+    margin-bottom: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+    font-size: 14px;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-left, .footer-middle, .footer-right {
+        flex: none;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .footer-bottom {
+        font-size: 12px;
+    }
+  
+
+}
+
+.con2{
+        display: flex;
+        justify-content: space-between;
+        /* align-items: center; */
+        width: 100vw;
+        height: 500px;
+        background: #f1eeee;
+        
+
+    }
+    .con2 form{
+        width: 300px;
+        height: 250px;
+        background: #dad7d7;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+
+.form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        /* height: 300px; */
+        /* width: 250px; */
+        /* border: 2px solid rgb(14, 6, 6); */
+        font-size: 30px;
+        gap: 20px;
+    }
+    .myform{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+    .txt{
+        height: 30px;
+        width: 250px;
+        /* font-size: 20px; */
+        border-radius: 5px;
+        text-decoration: none  ;
+        border: #dad7d7;
+        padding-left: 10px ;
+    }
+    .description{
+        border: #dad7d7;
+        height: 50px;
+        width: 250px;
+    }
+    .submit{
+        border: #dad7d7;
+        height: 30px;
+        width: 70px;
+        border-radius: 5px;
+    }
+    .form h1{
+        padding-left: 30px;
+    }
+    .detail{
+        font-size: 15px;
+        font-weight: bold;
+        /* gap: 30px */
+        margin: 10px 0px 10px 0px;
+        left: 0%;
+        padding-right: 100px;
+
+    }
+    .detail p{
+        margin: 10px 0px 10px 0px;
+        left: 0%;
+    }
+    .vertical{
+        width: 2px;
+        height: inherit;
+        background-color: #333;
+    }
+    .locate{
+        height: 300px;
+        width: 250px;
+    }
+    .locate img{
+        height: inherit;
+        width: inherit  ;
+    }
+    </style>
+</head>
+<body>
+    <header class="head">
+        <div class="logo">
+            <img src="Logo.png" alt="">
+        </div>
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li><a href="Project.html">HOME</a></li>
+                    <li><a href="About.html">ABOUT US</a></li>
+                    <li><a href="#">SUPPORT</a></li>
+                    <li><a href="#">HELP</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="cont_img">
+            <img src="contactImage.png" alt="contact Image">
+        </div>
+
+        <div class="con2">
+            <div class="form">
+                <h1>Get In Touch Us</h1>
+                <form action="" class="myform" onsubmit="formValidate()" method="post">
+                    <input type="text" name="fname" id="fname" class="txt" placeholder="Name">
+
+                    <input type="tel" name="pno" id="pno" class="txt" placeholder="Mobile">
+
+                    <input type="email" name="email" id="email" class="txt" placeholder="email">
+                    <textarea name="Description" id=""class="description" placeholder="Description"></textarea>
+
+                    <input type="submit" name="" id="" class="submit">
+                </form>
+            </div>
+            <div class="vertical">
+
+            </div>
+            <div class="detail">
+                <p>Mobile : 91 8419934098</p>
+                <p>Email : yrahul@5210gmail.com</p>
+                <p>Contact Time : 9:00 AM to 8:00PM</p>
+                <p>Address: Maharashtra Plot No.66, Hilton Towers, Office Unit No.129, 1st Floor, Sector 11, CBD Belapur</p>
+                <p>         Navi Mumbai, Maharashtra 400614</p>
+                <div class="locate">
+                    <img src="location.png" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <h3>AK Enterprises</h3>
+                <p>Providing quality services since 2007.</p>
+            </div>
+            <div class="footer-middle">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="Project.html">Home</a></li>
+                    <li><a href="About.html">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <h4>Contact</h4>
+                <p>Email: ak@enterprises.com</p>
+                <p>Phone: +91 8419934098</p>
+                <p>Address: Plot No.66, Hilton Towers, Office Unit No.129, 1st Floor, Sector 11, CBD Belapur, Navi Mumbai, Maharashtra 400614</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Company Name | All Rights Reserved</p>
+        </div>
+    </footer>
+
+</body>
+</html>

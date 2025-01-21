@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+    
+}
+.head{
+    display: flex;
+    height: 50px;
+}
+.logo{
+    height: 50px;
+    width: 50vw;
+    right: 20%;
+    background-color: black ;
+    border-color: #470eaf;
+    /* position: relative; */
+}
+.logo::before{
+    content: 'We Destroy to Rebuild';
+    position: absolute;
+    color: antiquewhite;
+    left: 20%;
+    top: 2%;
+    font-size: 20px;
+    cursor: pointer;
+    transform: rotate(360deg);
+    transition: 0.5s all ease;
+
+}
+.logo:hover::before{
+    /* transform: translateX(10%); */
+    transform: scale(1.1);
+}
+.logo img{
+    height: inherit;
+    width: 30%;
+    border-radius: 10px;
+    border: 2px solid black;
+    /* border-color: white; */
+
+}
+.nav{
+    background-color: grey;
+}
+ul{
+    height: 50px;
+    display: flex;
+    gap: 25px;
+    text-decoration: none;
+    width: 50vw;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    list-style: none;
+
+}
+li a{
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0px 0px 0px 25px;
+    
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.footer-left, .footer-middle, .footer-right {
+    flex: 1;
+}
+
+.footer-left h3 {
+    font-size: 24px;
+}
+
+.footer-middle h4, .footer-right h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-middle ul {
+    list-style: none;
+}
+
+.footer-middle ul li {
+    margin-bottom: 10px;
+}
+
+.footer-middle ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.footer-middle ul li a:hover {
+    color: #ff9800;
+}
+
+.footer-right p {
+    margin-bottom: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+    font-size: 14px;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-left, .footer-middle, .footer-right {
+        flex: none;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .footer-bottom {
+        font-size: 12px;
+    }
+}
+
+.header_home{
+    height: 50px;
+    width: 95%;
+    font-size: 25px;
+    /* border: 2px solid blue; */
+    margin: auto;
+    color: #454545;
+}
+.content{
+    width: 95%;font-size: 20px;margin: auto;color: #454545; 
+    /* border: 2px solid blue;    */
+
+}
+.content h3 {
+    color: #0366ba;
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: 400;
+}
+.our-expertise{
+    
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    gap: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+span{
+    font-weight: 400;
+    color: #0366ba;
+}
+.our-expertise li, .bullet li {
+    background: rgba(0, 0, 0, 0) url(bullet.png) no-repeat scroll left top;
+    color: #454545;
+    list-style: outside none none;
+    margin-left: 0;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+.founder_detail{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    gap: 20px;
+}
+    </style>
+</head>
+<body>
+    <header class="head">
+        <div class="logo">
+            <img src="Logo.png" alt="">
+        </div>
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li><a href="Project.html">HOME</a></li>
+                    <li><a href="About.html">ABOUT US</a></li>
+                    <li><a href="support.html">SUPPORT</a></li>
+                    <li><a href="#">HELP</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="subheader" id="subheader" style="background-image: url(AboutUS.png);width: 100vw; height: 300px;background-repeat: no-repeat;background-size: cover;background-position: center center;" >
+            <div class="h1" style="color: white;font-size: 40px;text-align: center;padding-top: 120px;">About US</div>
+
+        </section>
+        <section class="header_home" >
+            <p style="text-align: end; padding-right:50px ;width: inherit; margin-top: 20px;">
+                <b><a href="Project.html" style="text-decoration: none; color: #333;">Home</a></b><b> &gt; </b>AboutUS</p>
+            <div class="underline" style="height: 1.5px;width: 100%;background-color: #333;"></div>
+            
+        </section>
+        <section class="content">
+            <h2>AK Enterprises</h2><br><br>
+            <p>AK Enterprises, established in 2007, is a leading demolition and excavation company known for its expertise and reliability in handling complex construction projects. With over a decade of experience, the company specializes in providing safe and efficient demolition services, as well as precise excavation solutions for residential, commercial, and industrial sectors. AK Enterprises is committed to delivering high-quality results while prioritizing safety and environmental responsibility on every job site.</p>
+            <div class="underline" style="height: 1px;width: 100%;background-color: #333;margin-top: 15px;margin-bottom: 10px;" ></div>
+            <h3 >Proficiencies:</h3>            
+            <ol class="our-expertise">
+                <li><span>Safety Compliance:</span> Expertise in OSHA regulations and site safety management.</li>
+                <li><span>Demolition Techniques:</span> Proficiency in mechanical, manual, and explosive demolition methods.</li>
+                <li><span>Hazardous Material Handling:</span> Safe removal of asbestos, lead, and other hazardous substances.</li>
+                <li><span>Environmental Awareness:</span> Implementing green demolition practices and controlling dust/noise.</li>
+                <li><span>tructural Knowledge:</span> Understanding building structures and materials for safe demolition.</li>
+                <li><span>Project Management:</span> Efficient scheduling, budgeting, and coordination of resources.</li>
+                <li><span>Regulatory Compliance:</span> Knowledge of permits, building codes, and environmental regulations.</li>
+                <li><span>Waste Management:</span> Effective waste sorting, recycling, and disposal practices.</li>
+                <li><span>Equipment Handling:</span> Skilled operation and maintenance of heavy demolition machinery.</li>
+                <li><span>Customer Communication:</span> Clear client updates and coordination with stakeholders.</li>
+            </ol>
+            <div class="underline" style="height: 1px;width: 100%;background-color: #333;margin-top: 15px;margin-bottom: 10px;" ></div>
+            <h3>Vision</h3>
+            <p>To be the industry leader and a market driven engineering construction company renowned for excellence, quality, performance and reliability in all types of construction.</p>
+            <div class="underline" style="height: 1px;width: 100%;background-color: #333;margin-top: 15px;margin-bottom: 10px;" ></div>
+            <h3>Mission</h3>
+            <ol class="our-expertise">
+                <li>To be the customer’s preferred choice for providing construction services</li>
+                <li>Constantly assess the needs, realities and values of the customer and set goals to satisfy their needs</li>
+                <li>Continually innovate, develop and adopt state-of-the-art technologies, methodologies and materials to deliver customer satisfaction through better, faster and cheaper construction services</li>
+                <li>Continually aspire to deliver higher standards of safety, occupational health and environment protection at work</li>
+                <li>Continually develop and maintain a robust supply chain that will help us deliver value to the customer on time and to expectations</li>
+                <li>Organize work for effectiveness in delivering results and always look to commit today’s resources to the future</li>
+                <li>To build a reputation of trust and reliability amongst our customers, other stakeholders and society</li>
+                
+            </ol>
+            <div class="underline" style="height: 1px;width: 100%;background-color: #333;margin-top: 15px;margin-bottom: 10px;" ></div>
+
+                <h2 style="color: #333;margin: 20px 0px 15px 10px;">Our Founder: Er. Rahul Yadav </h2>
+            <div class="founder_detail">
+                
+                <div class="founder_img">
+                    <img src="image1.png" alt="">
+                </div>
+                <div class="founder_content">
+                    <p>
+                        Er. Rahul Yadav is widely hailed as the Father of the Indian Transportation Industry. He is remembered as the man who took an ambitious yet pragmatic stand in challenging British monopolies, a feat that resulted in India’s first shipyard, aircraft factory and automobile factory. <br>
+                        <br>By the end of his journey, Er. Rahul Yadav had created enterprises that spanned the entire industrial spectrum, including Construction, Shipping, Engineering, Agriculture and Agricultural Products, Automobiles, Aerospace, and Finance.
+                    </p>
+                </div>
+            </div>
+            <div class="underline" style="height: 1px;width: 100%;background-color: #333;margin-top: 15px;margin-bottom: 10px;" ></div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <h3>AK Enterprises</h3>
+                <p>Providing quality services since 2007.</p>
+            </div>
+            <div class="footer-middle">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="Project.html">Home</a></li>
+                    <li><a href="About.html">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <h4>Contact</h4>
+                <p>Email: ak@enterprises.com</p>
+                <p>Phone: +91 8419934098</p>
+            </div>
+        </div>  
+        <div class="footer-bottom">
+            <p>&copy; 2025 Company Name | All Rights Reserved</p>
+        </div>
+    </footer>
+
+</body>
+</html>

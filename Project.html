@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="Project.css ">
+
+    <style>
+       
+       
+    </style>
+</head>
+<body>
+    <!-- <img src="BgImg.png" alt=""> -->
+    <header class="head">
+        <div class="logo">
+            <img src="Logo.png" alt="">
+        </div>
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li><a href="Project.html">HOME</a></li>
+                    <li><a href="About.html">ABOUT US</a></li>
+                    <li><a href="support.html">SUPPORT</a></li>
+                    <li><a href="help.html">HELP</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="form">
+            <form action="" class="myform" onsubmit="formValidate()" method="post">
+                <h1>HELLO ! Fill form to register your seat.</h1>
+                <P ><label for="fname">First Name :</label>
+                <input type="text" name="" id="fname" class="txt" required><span style="color: red;">*</span></P>
+
+                <P ><label for="lname">Last Name :</label>
+                <input type="text" name="" id="lname" class="txt" required><span style="color: red;">*</span></P>
+
+                <P ><label for="pno">Mobile No :</label>
+                <input type="tel" name="" id="pno" class="tel" pattern="[1-9]{1}[0-9]{9}" required><span style="color: red;">*</span></P>
+
+                <P ><label for="email">Email :</label>
+                <input type="email" name="" id="email" required><span style="color: red;">*</span></P> 
+                
+
+                <P><input type="submit" name="" id="submit" ></P>
+            </form>
+        </div>
+    </main>
+
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <h3>AK Enterprises</h3>
+                <!-- <p>We Destroy to Rebuild.</p> -->
+                <p>Providing quality services since 2007.</p>
+            </div>
+            <div class="footer-middle">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="Project.html">Home</a></li>
+                    <li><a href="About.html">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <h4>Contact</h4>
+                <p>Email: ak@enterprises.com</p>
+                <p>Phone: +918419934098</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Company Name | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script>
+        function formValidate(){
+
+            console.log(document.getElementById('#fname'));
+            console.log(document.getElementById('#lname'));
+            console.log(document.getElementById('#pno'));
+            console.log(document.getElementById('#email'));
+
+            
+        }
+    </script>
+</body>
+</html>
+
+<!--    var phonePattern = /^[1-9]{1}[0-9]{9}$/; // 10-digit number starting with a non-zero digit
+        var phone = "9876543210";
+
+        console.log(phonePattern.test(phone));  // true, because it matches the pattern
+ -->
