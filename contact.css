@@ -5,17 +5,6 @@
     
     
 }
-body{
-    background-image: url("image/BgImg.png");
-    /* background: fixed; */
-    /* background-image: image-set(); */
-    background-color: transparent;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center ; 
-    background-attachment: fixed;
-    /* filter: blur(1px); */
-}
 .head{
     display: flex;
     height: 50px;
@@ -73,54 +62,17 @@ li a{
     margin: 0px 0px 0px 25px;
     
 }
-.content{
-    width: 100%;
-    height: 500px;
+
+.cont_img{
+    width: 100vw;
+}
+.cont_img img{
+    width: 100vw;
+    height: 300px;
 }
 
-   .myform{
-    color: rgb(1, 1, 12);
-    height: 400px;
-    width: 500px;
-    /* display: inline-block; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border: 2px solid rgb(7, 7, 7);
-    font-size: large;
-    /* filter: blur(1px); */
-   }
-   .form{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
-    margin-bottom: 100px;
-   }
 
-   /* p{
-    font-size: 30px;
-   } */
-   input{
-    height: 30px;
-    font-size: 20px;
-    background-color: transparent;
-    color: rgb(254, 254, 255);
-   }
-   /* input [type="email"]{
-    margin: 0x 20px 0px 0px;
-    color: blue;
-    background-color: blueviolet;
-   } */
-   #email{
-    background-color: transparent;
-    margin: 0px 0px 0px 50px;
-   }
-
-
-   footer {
+    footer {
     background-color: #333;
     color: white;
     padding: 40px 20px;
@@ -194,4 +146,92 @@ li a{
     .footer-bottom {
         font-size: 12px;
     }
+  
+
 }
+
+.con2{
+        display: flex;
+        justify-content: space-between;
+        /* align-items: center; */
+        width: 100vw;
+        height: 500px;
+        background: #f1eeee;
+        
+
+    }
+    .con2 form{
+        width: 300px;
+        height: 250px;
+        background: #dad7d7;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+
+.form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        /* height: 300px; */
+        /* width: 250px; */
+        /* border: 2px solid rgb(14, 6, 6); */
+        font-size: 30px;
+        gap: 20px;
+    }
+    .myform{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+    .txt{
+        height: 30px;
+        width: 250px;
+        /* font-size: 20px; */
+        border-radius: 5px;
+        text-decoration: none  ;
+        border: #dad7d7;
+        padding-left: 10px ;
+    }
+    .description{
+        border: #dad7d7;
+        height: 50px;
+        width: 250px;
+    }
+    .submit{
+        border: #dad7d7;
+        height: 30px;
+        width: 70px;
+        border-radius: 5px;
+    }
+    .form h1{
+        padding-left: 30px;
+    }
+    .detail{
+        font-size: 15px;
+        font-weight: bold;
+        /* gap: 30px */
+        margin: 10px 0px 10px 0px;
+        left: 0%;
+        padding-right: 100px;
+
+    }
+    .detail p{
+        margin: 10px 0px 10px 0px;
+        left: 0%;
+    }
+    .vertical{
+        width: 2px;
+        height: inherit;
+        background-color: #333;
+    }
+    .locate{
+        height: 300px;
+        width: 250px;
+    }
+    .locate img{
+        height: inherit;
+        width: inherit  ;
+    }

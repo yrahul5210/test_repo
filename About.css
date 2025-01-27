@@ -5,17 +5,6 @@
     
     
 }
-body{
-    background-image: url("image/BgImg.png");
-    /* background: fixed; */
-    /* background-image: image-set(); */
-    background-color: transparent;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center ; 
-    background-attachment: fixed;
-    /* filter: blur(1px); */
-}
 .head{
     display: flex;
     height: 50px;
@@ -29,7 +18,7 @@ body{
     /* position: relative; */
 }
 .logo::before{
-    content: 'We Demolish to Rebuild';
+    content: 'We Destroy to Rebuild';
     position: absolute;
     color: antiquewhite;
     left: 20%;
@@ -73,54 +62,71 @@ li a{
     margin: 0px 0px 0px 25px;
     
 }
-.content{
-    width: 100%;
-    height: 500px;
-}
 
-   .myform{
-    color: rgb(1, 1, 12);
-    height: 400px;
-    width: 500px;
-    /* display: inline-block; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border: 2px solid rgb(7, 7, 7);
-    font-size: large;
-    /* filter: blur(1px); */
-   }
-   .form{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
-    margin-bottom: 100px;
-   }
+.image{
+            height: 200px;
+            width: 250px;
+            border: 2px solid #9af508;
+            position: relative;
+            overflow: hidden;
+        }
+        .image img{
+            height: 100%;
+            width: 100%;
+        }
+        .image::before{
+            content: 'Mountains';
+            position: absolute;
+            left: 30%;
+            top: 10%;
+            transform: translateY(-250%) rotate(360deg);
+            transition: 0.5s all ease;
+            color: rgb(238, 235, 235);
+            /* transform: rotate(180deg); */
 
-   /* p{
-    font-size: 30px;
-   } */
-   input{
-    height: 30px;
-    font-size: 20px;
-    background-color: transparent;
-    color: rgb(254, 254, 255);
-   }
-   /* input [type="email"]{
-    margin: 0x 20px 0px 0px;
-    color: blue;
-    background-color: blueviolet;
-   } */
-   #email{
-    background-color: transparent;
-    margin: 0px 0px 0px 50px;
-   }
+        }
+        .image:hover::before{
+            transform: translateY(0%);
+        }
 
+        .image::after{
+            content: 'Mountains is beautiful place to explore and interact with wild animals. ';
+            position: absolute;
+            left: 0%;   
+            /* top: 10%; */
+            bottom: 0%;
+            transform: translateY(100%);
+            transition: 0.5s all ease;
+            color: rgb(17, 16, 16);
+            background: rgba(255, 255, 255, 0.5);
 
-   footer {
+        }
+        .image:hover::after{
+            transform: translateY(0%);
+        }
+
+        .con{
+            display: flex;
+            gap: 10px;
+            top: 10%;
+            justify-content: space-between;
+        }
+        .con1{
+            margin-top: 10px;
+            display: flex;
+            gap: 10px;
+            top: 10%;
+            justify-content: space-between;
+        }
+        .con2{
+            margin-top: 10px;
+            display: flex;
+            gap: 10px;
+            top: 10%;
+            justify-content: space-between;
+        }
+
+footer {
     background-color: #333;
     color: white;
     padding: 40px 20px;
